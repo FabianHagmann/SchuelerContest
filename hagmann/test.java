@@ -15,7 +15,29 @@ public class test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String input = "tri Length=243 Iterations=3";
+        String[] parts = input.split(" ");
+        String it = parts[2].split("=")[1];
+        int iterations = Integer.parseInt(it);
+        
+        String le = parts[1].split("=")[1];
+        double lenght = Double.parseDouble(le);
+        
+        double ges = lenght;
+        int vorkommen = 1;
+        if (parts[0].equals("tri")) {
+            double innerLength = lenght;
+            for (int i = 0; i < iterations; i++) {
+                double part = innerLength/3;
+                ges += part*vorkommen;
+                vorkommen *= 2;
+                innerLength /= 3;
+            }
+        } else {
+            
+        }
+        ges*=3;
+        System.out.println(ges);
     }
     
 }
