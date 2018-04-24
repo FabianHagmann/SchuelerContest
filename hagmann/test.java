@@ -15,7 +15,7 @@ public class test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String input = "tri Length=531441 Iterations=7";
+        String input = "tri Length=531441 Iterations=9";
         String[] parts = input.split(" ");
         String it = parts[2].split("=")[1];
         int iterations = Integer.parseInt(it);
@@ -37,7 +37,7 @@ public class test {
             
         }
         ges*=3;
-        System.out.println(ges);
+        System.out.format("%20f", ges);
     }
     
 }
