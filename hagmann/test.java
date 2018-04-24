@@ -15,7 +15,7 @@ public class test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String input = "tri Length=243 Iterations=3";
+        String input = "tri Length=531441 Iterations=7";
         String[] parts = input.split(" ");
         String it = parts[2].split("=")[1];
         int iterations = Integer.parseInt(it);
@@ -30,7 +30,7 @@ public class test {
             for (int i = 0; i < iterations; i++) {
                 double part = innerLength/3;
                 ges += part*vorkommen;
-                vorkommen *= 2;
+                vorkommen *= 4;
                 innerLength /= 3;
             }
         } else {
