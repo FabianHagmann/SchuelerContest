@@ -15,7 +15,7 @@ public class test2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String input = "sq Length=9 Iterations=1";
+        String input = "sq Length=243 Iterations=3";
         String[] parts = input.split(" ");
         String it = parts[2].split("=")[1];
         int iterations = Integer.parseInt(it);
@@ -40,7 +40,7 @@ public class test2 {
                 double part = innerLength/3;
                 ges += 2*part*vorkommen;
                 vorkommen *= 4;
-                vorkommen += 1;
+                vorkommen += Math.pow(5, i);
                 innerLength /= 3;
             }
             ges*=4;
