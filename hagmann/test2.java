@@ -15,7 +15,7 @@ public class test2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String input = "sq Length=243 Iterations=3";
+        String input = "sq Length=19683 Iterations=7";
         String[] parts = input.split(" ");
         String it = parts[2].split("=")[1];
         int iterations = Integer.parseInt(it);
